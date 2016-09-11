@@ -8,7 +8,7 @@ body {
   margin-bottom: 0;
   background-color: #2d2d30;
   border: 0;
-  font-size: 12px !important;
+  font-size: 1.2em;
   letter-spacing: 4px;
   opacity:0.9;
   font-family: Montserrat, sans-serif;
@@ -20,16 +20,21 @@ body {
   text-align: center;
 }
 
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
 
 .navbar .navbar-brand {
+  font-size: 1.3em;
   font-weight: bold;
   position: absolute;
   left: 30px;
-  .margin-left: 10px;
 }
 
 #main-menu {
