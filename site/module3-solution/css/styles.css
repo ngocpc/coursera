@@ -1,33 +1,40 @@
-/* Add a dark background color with a little bit see-through */
-.navbar {
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 12px !important;
-    letter-spacing: 4px;
-    opacity:0.9;
-    font-family: Montserrat, sans-serif;
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
 }
 
-body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
+/* Add a dark background color with a little bit see-through */
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 12px !important;
+  letter-spacing: 4px;
+  opacity:0.9;
+  font-family: Montserrat, sans-serif;
 }
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
-    text-align: center;
+  color: #d5d5d5 !important;
+  text-align: center;
 }
 
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+  border-color: transparent;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  position: absolute;
+  left: 30px;
+  .margin-left: 10px;
 }
 
 #main-menu {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 #chicken-menu {

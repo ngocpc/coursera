@@ -6,14 +6,14 @@ $(document).ready(function(){
     // alert(document.getElementById("main-menu").style.paddingTop);
   });
   $('#myNavbar').on('hidden.bs.collapse', function () {
-    document.getElementById("main-menu").style.paddingTop="40px";
+    document.getElementById("main-menu").style.paddingTop="50px";
     isShow=false;
   });
 })
 
 $( window ).resize(function() {
   if ($( window ).width() > 768) {
-    document.getElementById("main-menu").style.paddingTop="40px";
+    document.getElementById("main-menu").style.paddingTop="50px";
   } else if (isShow==true) {
     document.getElementById("main-menu").style.paddingTop="180px";
   }
