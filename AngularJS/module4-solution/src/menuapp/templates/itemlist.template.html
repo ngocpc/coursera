@@ -1,4 +1,4 @@
-<!-- <h2> Menu Items for {{...}}</h2> -->
+<!-- <h2> Our menu Items for {{$ctrl.categoryName}}: </h2> -->
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -10,12 +10,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="item in itemList.items">
+      <tr ng-repeat="item in $ctrl.items">
         <td> {{ item.name }} </td>
         <td> {{ item.short_name }} </td>
         <td> {{ item.description }} </td>
-        <!-- <td> <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button> </td> -->
-        <!-- <td> <button>Don't want this one!</button> -->
       </tr>
     </tbody>
   </table>

@@ -39,17 +39,18 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('categoryList.itemList', {
   // .state('itemList', {
     url: '/item-list/{categoryId}',
-    templateUrl: 'src/menuapp/templates/itemlist.template.html',
+    templateUrl: 'src/menuapp/templates/main-itemlist.template.html',
     controller: 'ItemListController as itemList',
     resolve: {
+      categoryName: ['$stateParams', 'categories',
+                          function ($stateParams, categories) {
+                            return categories[$stateParams.categoryId].name;
+                          }],
       items: ['$stateParams', 'MenuDataService', 'categories',
                 function ($stateParams, MenuDataService, categories) {
-                  // console.log("Categories: ", categories[0]);
                   var categoryShortName = categories[$stateParams.categoryId].short_name;
-                  // console.log("Fetching data with shortName = ", categoryShortName);
                   return MenuDataService.getItemsForCategory(categoryShortName)
                     .then(function (response) {
-                      // console.log("This is response data", response.data.menu_items);
                       return response.data.menu_items;
                     });
               }]
