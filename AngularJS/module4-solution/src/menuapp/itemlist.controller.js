@@ -1,0 +1,16 @@
+(function () {
+'use strict';
+
+angular.module('MenuApp')
+.controller('ItemListController', ItemListController);
+
+
+ItemListController.$inject = ['MenuDataService', 'items'];
+function ItemListController(MenuDataService, items) {
+  var itemList = this;
+  itemList.items = items;
+
+  // console.log("These are items: ", itemList.items);
+}
+
+})();

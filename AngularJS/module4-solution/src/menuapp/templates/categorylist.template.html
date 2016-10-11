@@ -1,0 +1,14 @@
+<ul>
+  <li ng-repeat="category in $ctrl.categories"
+      ui-sref="categoryList.itemList({categoryId: $index})"
+      ui-sref-active="is-active" ui-nested>
+    ({{ category.short_name }}) {{ category.name }}
+  </li>
+</ul>
+
+<!-- <ul>
+  <li ng-repeat="category in $ctrl.categories"
+      ui-sref="categoryList.itemList({categoryId: $index})">
+    ({{ category.short_name }}) {{ category.name }}
+  </li>
+</ul> -->
