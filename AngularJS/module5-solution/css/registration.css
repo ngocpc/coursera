@@ -1,0 +1,27 @@
+fieldset {
+  background-color: white;
+  color: black;
+}
+
+input {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+button {
+  font-size: 24px;
+  /*color: black;*/
+}
+
+.ng-touched.ng-valid {
+  border: 2px green solid;
+}
+
+.ng-touched.ng-invalid {
+  border: 2px red solid;
+}
+
+#info {
+  /*margin-top: 20px;*/
+  background-color: white;
+  color: black;
+}

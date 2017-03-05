@@ -1,0 +1,29 @@
+<div class="container">
+  <div ng-if="!infoCtrl.info">
+     <span>Not Signed Up Yet.</span>
+     <a ui-sref="public.registration">
+        Sign up Now </a>
+  </div>
+
+  <!-- <div ng-if="infoCtrl.register"> -->
+  <div id="info" ng-if="infoCtrl.info">
+     <span>First Name: </span> {{ infoCtrl.info.firstname }}
+     <br>
+     <span>Last Name: </span> {{ infoCtrl.info.lastname }}
+     <br>
+     <span>Email: </span> {{ infoCtrl.info.email }}
+     <br>
+     <span>Phone: </span> {{ infoCtrl.info.phone }}
+     <br>
+     <span>Your favorite menu item: </span>
+     <br>
+     <span>Title: </span> {{ infoCtrl.item.name }}
+     <br>
+     <span>Description: </span> {{ infoCtrl.item.description }}
+     <br>
+     <img class="img-responsive" width="250" height="150"
+          ng-src="{{infoCtrl.basePath}}/images/{{infoCtrl.item.short_name}}.jpg"
+          alt="{{infoCtrl.item.name}}">
+
+  </div>
+</div>
